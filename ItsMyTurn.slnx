@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="srv.slots.api/srv.slots.api.csproj" />
+  <Project Path="srv.slots.application/srv.slots.application.csproj" Id="739e3013-ed53-4ede-8626-1902e4baadc3" />
+  <Project Path="srv.slots.domain/srv.slots.domain.csproj" Id="5d6b6d84-bdad-4216-8d49-9ba8baed57e4" />
+  <Project Path="srv.slots.infrastructure/srv.slots.infrastructure.csproj" Id="36801a2e-d739-4670-a113-61d14128930a" />
+</Solution>
