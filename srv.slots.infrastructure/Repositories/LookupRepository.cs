@@ -14,7 +14,7 @@ public class LookupRepository : ILookupRepository
     public async Task<List<CountryDto>> GetCountriesAsync()
     {
         const string sql = "SELECT id AS Id, name AS Name, code AS Code FROM countries WHERE is_active = 1 ORDER BY name;";
-        using var conn = _factory.CreateConnection();
+        using var conn = _factory.CreateConnection(); 
         return (await conn.QueryAsync<CountryDto>(sql)).ToList();
     }
 

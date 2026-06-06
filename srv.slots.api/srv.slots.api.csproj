@@ -9,12 +9,13 @@
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
 	  <PackageReference Include="Dapper" Version="2.1.72" />
+	  <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.0" />
 	  <PackageReference Include="MySqlConnector" Version="2.5.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="../srv.slots.application/srv.slots.application.csproj" />
-    <ProjectReference Include="../srv.slots.domain/srv.slots.domain.csproj" />
-    <ProjectReference Include="../srv.slots.infrastructure/srv.slots.infrastructure.csproj" />
+    <ProjectReference Include="..\srv.slots.application\srv.slots.application.csproj" />
+    <ProjectReference Include="..\srv.slots.domain\srv.slots.domain.csproj" />
+    <ProjectReference Include="..\srv.slots.infrastructure\srv.slots.infrastructure.csproj" />
   </ItemGroup>
 </Project>
