@@ -39,6 +39,9 @@ public static class DependencyInjection
         services.AddScoped<ITokenConfigRepository, TokenConfigRepository>();
         services.AddScoped<IProviderSelfProfileRepository, ProviderSelfProfileRepository>();
 
+        // ── Module 5 ──
+        services.AddScoped<IAppointmentRepository, AppointmentRepository>();
+
         // ── Security ──
         services.Configure<JwtSettings>(config.GetSection("Jwt"));
         services.AddSingleton<IPasswordHasher, BCryptPasswordHasher>();

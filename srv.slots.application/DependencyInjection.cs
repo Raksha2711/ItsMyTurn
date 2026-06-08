@@ -28,6 +28,10 @@ public static class DependencyInjection
         services.AddScoped<ITokenConfigService, TokenConfigService>();
         services.AddScoped<IProviderSelfProfileService, ProviderSelfProfileService>();
 
+        // ── Module 5 ──
+        services.AddScoped<IProviderAppointmentService, ProviderAppointmentService>();
+        services.AddScoped<ICustomerAppointmentService, CustomerAppointmentService>();
+
         return services;
     }
 }
